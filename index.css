@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    @apply bg-[#0a0a0a] text-white;
+  }
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .gold-accent {
+    color: #d4af37;
+  }
+  .bg-gold {
+    background-color: #d4af37;
+  }
+  .border-gold {
+    border-color: #d4af37;
+  }
+  .text-gold {
+    color: #d4af37;
+  }
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
